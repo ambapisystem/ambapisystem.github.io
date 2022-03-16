@@ -1,3 +1,2 @@
-# ambapisystem.github.io
-This page is intended to help PI System Administrators to monitor the pi data acquisition quality in the PI system.
-Mamy 16-mar-2022
+This page is intended to support the PI System Administrators in their daily task in regard of monitoring and observation of data acquisition quality of their current PI System.
+Mamy A. (16-Mar-2022)

@@ -3,20 +3,117 @@
 <meta http-equiv='cache-control' content='no-cache'>
 <meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
 <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<style>p{margin: 0;padding: 0;cursor: pointer}</style>
+<script>function ShowTag(event){alert(event.target.id);}</script>
 </head>
 <body>
 <div class="row">
-<div class="col-2">
+<div id = "31FIC0101/PID.PV_IN" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">PAL</p></div></div>
 </div>
-<div id = "31FIC0101/PID.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">PAL</p></div></div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>15/03/2022 6:20:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint1_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 7:59:36 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint1.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>15/03/2022 8:50:50 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint1_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint1.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <canvas id = "31FIC0101/PID.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
-<div class="col-2">
+<div id = "39FIC0211/PID_S.PV_IN" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">REFINERY</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>17/03/2022 7:47:14 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint4_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 7:08:35 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint4.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>17/03/2022 7:48:55 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint4_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint4.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "39FIC0211/PID_S.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "64FIT0924/PV.U" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">UTILITIES</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>07/03/2022 1:15:44 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 12:19:13 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint5.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>15/03/2022 8:48:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint5.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "64FIT0924/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
 </div>
 <script>
@@ -24,203 +121,174 @@ var ctx = document.getElementById('31FIC0101/PID.PV_IN_myChart').getContext('2d'
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "31FIC0101/PID.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [34.57471,34.92846,38.65511,38.55609,37.31607,35.46251,36.20856,35.64184,35.04302,35.11459,34.98323,34.90068,38.5814,36.45748,37.27657,36.70501,37.16835,36.61191,44.16679,37.62984,36.46394,35.15371,10.40415,0.4950244,0.4482133,], 
+data: [38.30866,38.61993,36.87233,35.7403,35.9598,35.53123,34.84159,35.21839,34.94973,34.88427,38.55684,36.18658,37.06962,36.74166,37.1438,36.58208,41.6471,37.60391,38.89678,36.05127,11.79291,0.4882233,0.5420459,1.598384,0.4496635,], 
 borderWidth: 3, 
 },
 {
 label: "32FIC1115/PID_S.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [14.14857,14.19625,14.19942,14.10299,14.12872,14.26768,14.25548,14.06314,14.16087,14.19196,14.07209,14.12078,14.20811,14.05849,14.1271,14.08775,13.97916,14.12446,14.18892,14.10036,14.03735,13.92068,13.98909,14.04664,14.1709,], 
+data: [14.21062,14.15862,14.10572,14.22821,14.26647,14.02738,14.14471,14.20072,14.06058,14.15813,14.20742,14.07802,14.07813,14.08857,13.97488,14.07717,14.11545,14.19957,14.03902,13.97135,13.97057,14.02077,14.14986,14.13637,14.14481,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "32FIC1115/PID_S.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">REFINERY</p></div></div>
-<canvas id = "32FIC1115/PID_S.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
-<script>
-var ctx = document.getElementById('32FIC1115/PID_S.PV_IN_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "32FIC1115/PID_S.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [14.14857,14.19625,14.19942,14.10299,14.12872,14.26768,14.25548,14.06314,14.16087,14.19196,14.07209,14.12078,14.20811,14.05849,14.1271,14.08775,13.97916,14.12446,14.18892,14.10036,14.03735,13.92068,13.98909,14.04664,14.1709,], 
-borderWidth: 3, 
-},
-{
-label: "39FIC0211/PID_S.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [3.784717,10.8153,3.335346,3.778579,-0.3753365,7.674004,3.705427,-2.063896,-2.121815,-2.179735,48.97659,49.137,53.68616,52.78703,53.93139,54.76699,54.23049,54.48656,51.45116,52.85558,51.15689,50.80405,50.28084,51.44574,52.53046,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "39FIC0211/PID_S.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">UTILITIES</p></div></div>
-<canvas id = "39FIC0211/PID_S.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
 <script>
 var ctx = document.getElementById('39FIC0211/PID_S.PV_IN_myChart').getContext('2d');
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "39FIC0211/PID_S.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [3.784717,10.8153,3.335346,3.778579,-0.3753365,7.674004,3.705427,-2.063896,-2.121815,-2.179735,48.97659,49.137,53.68616,52.78703,53.93139,54.76699,54.23049,54.48656,51.45116,52.85558,51.15689,50.80405,50.28084,51.44574,52.53046,], 
+data: [0.7081113,3.585577,2.52626,0.1976439,-2.141761,-2.058631,-2.11655,-2.174469,48.92986,50.64929,51.9791,52.81093,52.6349,55.73738,54.83883,53.27461,51.72985,51.99979,51.04135,50.56469,51.2585,50.48845,51.72549,52.49033,51.18615,], 
 borderWidth: 3, 
 },
 {
 label: "40FIC0117/PID_S.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [29.82931,29.83039,29.82579,29.80808,29.79037,29.77265,29.75494,29.73722,28.51317,28.24085,24.38839,23.85192,28.9729,29.63066,29.88021,29.88434,29.6145,29.42735,29.43705,29.44674,29.45644,29.46614,29.47756,29.49478,29.50351,], 
+data: [29.82741,29.80969,29.79198,29.77426,29.75655,29.73883,28.55084,28.2533,24.47779,23.86549,28.85458,29.60502,29.87049,29.89624,29.63306,29.42886,29.43616,29.44586,29.45556,29.46526,29.47501,29.48511,29.4952,29.50261,29.50261,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "40FIC0117/PID_S.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">METSO</p></div></div>
-<canvas id = "40FIC0117/PID_S.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
-<script>
-var ctx = document.getElementById('40FIC0117/PID_S.PV_IN_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "40FIC0117/PID_S.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [29.82931,29.83039,29.82579,29.80808,29.79037,29.77265,29.75494,29.73722,28.51317,28.24085,24.38839,23.85192,28.9729,29.63066,29.88021,29.88434,29.6145,29.42735,29.43705,29.44674,29.45644,29.46614,29.47756,29.49478,29.50351,], 
-borderWidth: 3, 
-},
-{
-label: "64FIT0924/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [1937.44,1883.539,1999.383,1936.754,1984.9,1992.188,1885.795,1938.657,1915.287,1884.476,1929.376,1707.358,2156.874,2160.946,2185.53,2157.149,1948.813,1857.033,2049.037,2130.028,2145.21,2018.443,2028.839,2048.52,2183.194,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "64FIT0924/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">PORT</p></div></div>
-<canvas id = "64FIT0924/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
 <script>
 var ctx = document.getElementById('64FIT0924/PV.U_myChart').getContext('2d');
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "64FIT0924/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [1937.44,1883.539,1999.383,1936.754,1984.9,1992.188,1885.795,1938.657,1915.287,1884.476,1929.376,1707.358,2156.874,2160.946,2185.53,2157.149,1948.813,1857.033,2049.037,2130.028,2145.21,2018.443,2028.839,2048.52,2183.194,], 
+data: [1988.456,1920.954,2033.781,1965.486,1865.798,1946.406,1895.614,1888.294,1951.765,1713.87,2141.106,2127.248,2184.865,2159.28,1981.166,1832.798,2066.378,2088.485,2165.515,2007.035,1989.323,2029.475,2173.638,2126.923,2192.486,], 
 borderWidth: 3, 
 },
 {
 label: "67PIT6213/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [4511.85,4515.47,4516.399,4520.791,4521.898,4520.699,4521.374,4524.963,4528.683,4534.6,4534.981,4536.706,4538.383,4542.898,4545.1,4547.753,4551.041,4553.79,4553.806,4555.779,4554.021,4558.344,4559.038,4560.102,4565.486,], 
+data: [4516.225,4520.539,4521.485,4521.308,4522.735,4523.932,4529.037,4533.302,4535.217,4537.443,4539.46,4542.295,4545.846,4547.981,4549.619,4552.698,4552.939,4555.577,4555.302,4557.62,4559.038,4560.089,4564.141,4569.13,4572.433,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
-</script>
 </script><div class="row">
-<div class="col-2">
+<div id = "69FIC6709/PID.PV_IN" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">METSO</p></div></div>
 </div>
-<div id = "67PIT6213/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">POWER PLANT</p></div></div>
-<canvas id = "67PIT6213/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>07/03/2022 1:15:44 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 12:19:13 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint5.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>15/03/2022 8:48:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint5.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="col-2">
 </div>
-</div>
-<script>
-var ctx = document.getElementById('67PIT6213/PV.U_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "67PIT6213/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [4511.85,4515.47,4516.399,4520.791,4521.898,4520.699,4521.374,4524.963,4528.683,4534.6,4534.981,4536.706,4538.383,4542.898,4545.1,4547.753,4551.041,4553.79,4553.806,4555.779,4554.021,4558.344,4559.038,4560.102,4565.486,], 
-borderWidth: 3, 
-},
-{
-label: "69FIC6709/PID.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [0,0.5927214,0.1553632,0.2158252,0.07018598,19.57651,20.23383,20.34347,20.6635,20.56519,20.63582,20.71365,19.79792,20.36892,20.55607,20.78539,20.11656,20.68107,20.57087,20.51682,20.38396,19.98634,20.12769,21.0758,21.05035,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "69FIC6709/PID.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">MINE SITE</p></div></div>
 <canvas id = "69FIC6709/PID.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
-<div class="col-2">
+<div id = "97-TE-9630/PV.U" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">PORT</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>23/03/2022 10:35:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>23/03/2022 10:46:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "97-TE-9630/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "74FT0601U1/PV.U" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">POWER PLANT</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>15/03/2022 6:20:07 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-opcint_4_PWP_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 1:07:10 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint3.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>15/03/2022 8:47:35 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-opcint_4_PWP_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint3.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "74FT0601U1/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
 </div>
 <script>
@@ -228,203 +296,174 @@ var ctx = document.getElementById('69FIC6709/PID.PV_IN_myChart').getContext('2d'
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "69FIC6709/PID.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [0,0.5927214,0.1553632,0.2158252,0.07018598,19.57651,20.23383,20.34347,20.6635,20.56519,20.63582,20.71365,19.79792,20.36892,20.55607,20.78539,20.11656,20.68107,20.57087,20.51682,20.38396,19.98634,20.12769,21.0758,21.05035,], 
+data: [0.06326781,0.06378401,0.1238895,13.09856,20.72371,20.7051,20.90279,20.6849,20.05206,20.44498,20.74109,21.01233,20.55074,20.10489,20.55314,20.03848,20.55799,20.08996,20.41083,20.65781,20.70823,20.52616,20.56656,20.32648,20.57152,], 
 borderWidth: 3, 
 },
 {
 label: "69PI5721/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [-1.26352,-1.708244,-2.013889,-2.072966,-2.244238,-2.373058,-0.5490403,-0.5946178,-0.9921065,-1.006945,-1.542288,-1.515164,-1.510032,-1.50484,-1.501353,-1.510597,-1.50737,-1.484375,-1.484375,-1.471847,-1.476996,-1.471354,-1.471354,-1.468097,-1.453993,], 
+data: [-1.982191,-2.067499,-2.200909,-2.370797,-0.5435096,-0.5946178,-1.002848,-1.006945,-1.528811,-1.51664,-1.513433,-1.498459,-1.4851,-1.511571,-1.51105,-1.488723,-1.484375,-1.471396,-1.478659,-1.471354,-1.471354,-1.465385,-1.461679,-1.459454,-1.796875,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "69PI5721/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">PIPELINE</p></div></div>
-<canvas id = "69PI5721/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
-<script>
-var ctx = document.getElementById('69PI5721/PV.U_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "69PI5721/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [-1.26352,-1.708244,-2.013889,-2.072966,-2.244238,-2.373058,-0.5490403,-0.5946178,-0.9921065,-1.006945,-1.542288,-1.515164,-1.510032,-1.50484,-1.501353,-1.510597,-1.50737,-1.484375,-1.484375,-1.471847,-1.476996,-1.471354,-1.471354,-1.468097,-1.453993,], 
-borderWidth: 3, 
-},
-{
-label: "97-TE-9630/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [68.87198,68.42198,66.783,64.53761,65.46053,66.40849,67.35646,68.30501,69.25407,69.42812,69.41334,69.39856,69.45903,69.62313,69.58942,69.33325,69.07707,68.82089,68.56471,68.30854,68.05236,67.79618,67.54001,67.33,67.33,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "97-TE-9630/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">MANGORO</p></div></div>
-<canvas id = "97-TE-9630/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
 <script>
 var ctx = document.getElementById('97-TE-9630/PV.U_myChart').getContext('2d');
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "97-TE-9630/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [68.87198,68.42198,66.783,64.53761,65.46053,66.40849,67.35646,68.30501,69.25407,69.42812,69.41334,69.39856,69.45903,69.62313,69.58942,69.33325,69.07707,68.82089,68.56471,68.30854,68.05236,67.79618,67.54001,67.33,67.33,], 
+data: [66.98714,64.74175,65.37434,66.32231,67.27028,68.21873,69.16779,69.42947,69.41468,69.3999,69.44411,69.60822,69.58998,69.27393,68.95787,68.64181,68.32575,68.0097,67.69364,67.37759,67.06153,66.74548,66.42942,66.0036,63.64,], 
 borderWidth: 3, 
 },
 {
 label: "97-TE-9631/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [73.51656,73.08313,72.64971,70.3334,70.2745,70.51402,70.75355,71.23766,71.99529,72.51657,72.50542,72.49426,74.22448,73.89944,73.53427,73.16911,72.80393,72.43876,72.07359,71.70231,71.28352,70.86472,70.46201,70.52202,70.58,], 
+data: [72.68912,70.57134,70.25272,70.49225,70.73177,71.16879,71.92641,72.51759,72.50643,72.49528,73.96905,73.93265,73.56747,73.2023,72.83713,72.47196,72.10679,71.74038,71.32159,70.9028,70.48401,70.62482,70.79966,70.97451,69.81,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "97-TE-9631/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">AIR SEPARATION PLANT</p></div></div>
-<canvas id = "97-TE-9631/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
-<script>
-var ctx = document.getElementById('97-TE-9631/PV.U_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "97-TE-9631/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [73.51656,73.08313,72.64971,70.3334,70.2745,70.51402,70.75355,71.23766,71.99529,72.51657,72.50542,72.49426,74.22448,73.89944,73.53427,73.16911,72.80393,72.43876,72.07359,71.70231,71.28352,70.86472,70.46201,70.52202,70.58,], 
-borderWidth: 3, 
-},
-{
-label: "74FT0601U1/PV.U", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [213.9942,221.1519,212.933,214.2849,207.8353,214.3699,213.2737,208.6711,229.8101,207.7213,213.6549,218.9748,214.0231,214.4076,213.3654,210.1611,212.859,222.6668,210.2957,217.9599,213.9217,213.6168,212.6123,222.2479,216.1272,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "74FT0601U1/PV.U" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">HYDROGEN PLANT</p></div></div>
-<canvas id = "74FT0601U1/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
 <script>
 var ctx = document.getElementById('74FT0601U1/PV.U_myChart').getContext('2d');
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "74FT0601U1/PV.U", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [213.9942,221.1519,212.933,214.2849,207.8353,214.3699,213.2737,208.6711,229.8101,207.7213,213.6549,218.9748,214.0231,214.4076,213.3654,210.1611,212.859,222.6668,210.2957,217.9599,213.9217,213.6168,212.6123,222.2479,216.1272,], 
+data: [209.4059,216.0507,207.4409,216.2101,213.6217,211.2578,224.0284,209.1468,213.2419,216.1968,213.9458,214.444,213.0043,208.9658,212.7438,223.3645,211.6186,218.7499,215.2578,213.4012,212.3181,222.4472,216.1727,210.5777,218.7651,], 
 borderWidth: 3, 
 },
 {
 label: "74TIC0608U3/PID.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,149.9672,149.8802,149.8802,149.9608,150.0885,150.0553,150.0249,150.0249,149.9218,149.8802,], 
+data: [150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,149.9783,149.8802,149.8802,149.944,150.0916,150.0583,150.025,150.0249,150.0399,150.0758,149.9261,150.0249,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
-</script>
 </script><div class="row">
-<div class="col-2">
+<div id = "22FIC1035/PID_S.PV_IN" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">MINE SITE</p></div></div>
 </div>
-<div id = "74TIC0608U3/PID.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">AMMONIA PLANT</p></div></div>
-<canvas id = "74TIC0608U3/PID.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>23/03/2022 2:22:07 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_MINESITE_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 10:35:06 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI2201A.OPCInt1.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>22/03/2022 11:39:52 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_MINESITE_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 11:40:05 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI2201B.OPCInt1.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="col-2">
 </div>
-</div>
-<script>
-var ctx = document.getElementById('74TIC0608U3/PID.PV_IN_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "74TIC0608U3/PID.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,150.0249,149.9672,149.8802,149.8802,149.9608,150.0885,150.0553,150.0249,150.0249,149.9218,149.8802,], 
-borderWidth: 3, 
-},
-{
-label: "22FIC1035/PID_S.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [1.728764,1.731093,1.739867,1.735708,1.734389,1.73138,1.74895,1.733919,1.733276,1.75698,1.711289,1.752033,1.715744,1.745623,1.74155,1.749646,1.76901,1.74248,1.738716,1.7357,1.735059,1.732796,1.733074,1443.246,544.0461,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "22FIC1035/PID_S.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">FURNACE</p></div></div>
 <canvas id = "22FIC1035/PID_S.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
-<div class="col-2">
+<div id = "245PIT0102" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">PIPELINE</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>22/03/2022 11:39:50 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-opcint_1_PSI_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 10:35:07 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI2201A.opcint8.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>22/03/2022 11:40:15 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-opcint_1_PSI_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 11:40:06 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI2201B.opcint8.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "245PIT0102_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "20FIT0344" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">MANGORO</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>28/01/2021 7:46:31 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_MGR_UFO2_State_1" style="background-color:Goldenrod">Off</span></p></td>
+<td>23/03/2022 9:04:02 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.MANGORO_OPC.OPCInt1.Device Status" style="background-color:Goldenrod" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>26/01/2021 2:07:49 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_MGR_UFO2_State_2" style="background-color:Goldenrod">Off</span></p></td>
+<td>23/03/2022 9:04:02 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.MANGORO_OPC.OPCInt1.Device Status" style="background-color:Goldenrod" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "20FIT0344_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
 </div>
 </div>
 <script>
@@ -432,93 +471,422 @@ var ctx = document.getElementById('22FIC1035/PID_S.PV_IN_myChart').getContext('2
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "22FIC1035/PID_S.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [1.728764,1.731093,1.739867,1.735708,1.734389,1.73138,1.74895,1.733919,1.733276,1.75698,1.711289,1.752033,1.715744,1.745623,1.74155,1.749646,1.76901,1.74248,1.738716,1.7357,1.735059,1.732796,1.733074,1443.246,544.0461,], 
+data: [1.738712,1.735725,1.73456,1.734427,1.749901,1.733516,1.732594,1.747846,1.763316,1.736236,1.740752,1.73327,1.742804,1.73224,1.773271,1.734975,1.74009,1.744825,1.734729,1.719897,1.734789,1281.011,586.4675,704.7142,831.4794,], 
 borderWidth: 3, 
 },
 {
 label: "22FIC1031/PID.PV_IN", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [31.08255,31.08129,30.97642,30.93535,29.31781,30.77459,30.83833,30.74981,21.05692,30.39383,36.26674,31.51426,30.99473,30.97428,30.96896,30.946,30.90163,30.88893,30.87931,30.8697,30.85176,30.82706,30.95665,31.266,31.37568,], 
+data: [30.98595,30.93502,30.9387,30.76879,30.83253,30.7375,20.10907,30.38039,37.3798,31.64481,31.01867,30.97477,30.96944,30.95004,30.90566,30.8898,30.88019,30.87057,30.85401,30.82931,30.99662,31.18858,31.37617,31.49044,31.96402,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "22FIC1031/PID.PV_IN" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">FURNACE</p></div></div>
-<canvas id = "22FIC1031/PID.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
-<script>
-var ctx = document.getElementById('22FIC1031/PID.PV_IN_myChart').getContext('2d');
-var chart = new Chart(ctx, {
-type: 'line', 
-data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
-datasets: [{
-label: "22FIC1031/PID.PV_IN", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(34, 177, 76)', 
-data: [31.08255,31.08129,30.97642,30.93535,29.31781,30.77459,30.83833,30.74981,21.05692,30.39383,36.26674,31.51426,30.99473,30.97428,30.96896,30.946,30.90163,30.88893,30.87931,30.8697,30.85176,30.82706,30.95665,31.266,31.37568,], 
-borderWidth: 3, 
-},
-{
-label: "245PIT0102", 
-backgroundColor: 'rgb(0, 0, 0,0)', 
-borderColor: 'rgb(0, 128, 255)', 
-data: [2464.41,2421.97,2431.142,2458.362,2476.215,2453.704,2417.519,2430.574,2451.067,2489.276,2518.569,2522.914,2487.67,2476.307,2466.324,2489.783,2490.592,2497.701,2489.993,2475.656,2486.513,2313.134,2022.433,1927.091,1904.156,], 
-borderWidth: 3, 
-}]
-},
-options: { }
-}); 
-</script>
-</script><div class="row">
-<div class="col-2">
-</div>
-<div id = "245PIT0102" class="col-8">
-<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:30px">FURNACE</p></div></div>
-<canvas id = "245PIT0102_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
-</div>
-<div class="col-2">
-</div>
-</div>
 <script>
 var ctx = document.getElementById('245PIT0102_myChart').getContext('2d');
 var chart = new Chart(ctx, {
 type: 'line', 
 data: {
-labels: ["23/03/2022 11:36:04 AM","23/03/2022 11:41:04 AM","23/03/2022 11:46:04 AM","23/03/2022 11:51:04 AM","23/03/2022 11:56:04 AM","23/03/2022 12:01:04 PM","23/03/2022 12:06:04 PM","23/03/2022 12:11:04 PM","23/03/2022 12:16:04 PM","23/03/2022 12:21:04 PM","23/03/2022 12:26:04 PM","23/03/2022 12:31:04 PM","23/03/2022 12:36:04 PM","23/03/2022 12:41:04 PM","23/03/2022 12:46:04 PM","23/03/2022 12:51:04 PM","23/03/2022 12:56:04 PM","23/03/2022 1:01:04 PM","23/03/2022 1:06:04 PM","23/03/2022 1:11:04 PM","23/03/2022 1:16:04 PM","23/03/2022 1:21:04 PM","23/03/2022 1:26:04 PM","23/03/2022 1:31:04 PM","23/03/2022 1:36:04 PM",],
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
 datasets: [{
 label: "245PIT0102", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(34, 177, 76)', 
-data: [2464.41,2421.97,2431.142,2458.362,2476.215,2453.704,2417.519,2430.574,2451.067,2489.276,2518.569,2522.914,2487.67,2476.307,2466.324,2489.783,2490.592,2497.701,2489.993,2475.656,2486.513,2313.134,2022.433,1927.091,1904.156,], 
+data: [2426.042,2454.486,2459.803,2450.607,2411.739,2429.032,2452.384,2490.636,2521.495,2522.11,2491.385,2481.913,2463.173,2487.235,2507.288,2491.368,2489.825,2476.892,2493.712,2347.905,2039.472,1927.131,1912.128,1914.768,1908.13,], 
 borderWidth: 3, 
 },
 {
 label: "242PIT0101", 
 backgroundColor: 'rgb(0, 0, 0,0)', 
 borderColor: 'rgb(0, 128, 255)', 
-data: [489.2281,416.7878,401.2746,524.8087,516.3467,279.7423,304.8287,424.5522,711.5006,952.0908,1060.094,1092.446,1076.811,1063.444,1022.583,1038.401,1018.742,964.4254,988.9441,978.3433,973.0276,1006.282,965.424,902.423,945.6019,], 
+data: [401.9826,514.814,528.5406,311.5154,296.04,408.2849,689.2684,932.1035,1056.031,1086.663,1078.123,1065.795,1030.189,1040.236,1020.018,951.3265,989.3049,985.9791,966.7581,1004.568,959.5142,893.012,943.7789,926.9366,831.25,], 
 borderWidth: 3, 
 }]
 },
 options: { }
 }); 
 </script>
+<script>
+var ctx = document.getElementById('20FIT0344_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "20FIT0344", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [1039.397,1023.934,1035.13,1043.923,1039.995,1040.592,1032.839,1036.109,1037.099,1032.641,1023.743,1036.316,1035.301,1029.831,1030.302,1035.799,1038.496,1037.354,1034.176,1045.334,1041.667,1032.433,1036.847,1037.084,1033.708,], 
+borderWidth: 3, 
+},
+{
+label: "20PIT0351", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [2.167465,2.167215,2.166965,2.166714,2.171046,2.170694,2.170342,2.168982,2.168982,2.168982,2.168982,2.168982,2.168982,2.172568,2.170324,2.16808,2.165836,2.163592,2.164184,2.165437,2.166667,2.16821,2.167413,2.165926,2.165509,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script><div class="row">
+<div id = "6600_FIC2421/PID.PV_IN" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">AIR SEP UNIT</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>23/03/2022 10:35:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>23/03/2022 10:46:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "6600_FIC2421/PID.PV_IN_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "63F00013/63FI00013.U" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">HYDROGEN PLANT</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>23/03/2022 10:35:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>23/03/2022 10:46:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint7_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 10:47:25 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.OPCInt2.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "63F00013/63FI00013.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "68-TI-0403/PV.U" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">AMMONIA PLANT</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>07/03/2022 1:15:44 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_1" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 12:19:13 PM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401A.opcint5.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>15/03/2022 8:48:39 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="opcint5_UFO2_State_2" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.opcint5.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "68-TI-0403/PV.U_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+</div>
+<script>
+var ctx = document.getElementById('6600_FIC2421/PID.PV_IN_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "6600_FIC2421/PID.PV_IN", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [14.90198,15.16564,15.02073,15.04009,14.99244,14.93544,14.92086,14.92359,14.80411,15.13094,14.99015,14.98315,15.05899,14.99663,15.07087,14.9389,15.10618,15.02563,15.10668,14.93798,14.90241,14.97665,14.82676,14.83645,15.12051,], 
+borderWidth: 3, 
+},
+{
+label: "6600_FIC3934/PID.PV_IN", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [1193.039,1177.112,1203.459,1197.732,1210.088,1215.771,1215.692,1206.513,1199.61,1214.549,1207.717,1195.965,1198.64,1194.836,1186.345,1190.814,1196.973,1206.678,1207.262,1188.119,1208.364,1207.989,1190.685,1197.835,1195.832,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script>
+<script>
+var ctx = document.getElementById('63F00013/63FI00013.U_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "63F00013/63FI00013.U", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [16.08589,14.42943,15.55162,17.56484,16.81281,13.94609,16.88761,17.86244,15.29549,15.98794,16.20745,14.92641,17.41911,16.82069,16.32243,14.40261,14.60823,16.64169,16.55186,14.70982,16.36532,16.4242,15.77749,15.67429,16.0606,], 
+borderWidth: 3, 
+},
+{
+label: "63T11171_S/63TI11171A.U", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [806.028,803.6956,801.363,800.0377,801.5707,801.1144,799.3812,797.6481,795.9149,796.205,803.3938,809.7082,808.8499,807.9916,807.1332,806.275,805.4166,804.5583,803.7001,802.8417,801.9835,801.1251,800.2668,799.8191,799.8191,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script>
+<script>
+var ctx = document.getElementById('68-TI-0403/PV.U_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "68-TI-0403/PV.U", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [-9.888016,-10.78921,-10.2971,-9.804999,-9.312893,-9.577581,-10.53448,-10.34191,-10.04896,-9.756011,-9.463062,-9.63636,-10.33346,-9.876279,-9.419099,-8.96192,-10.00615,-9.523864,-8.949051,-9.493908,-9.251158,-9.181529,-10.26095,-10.17402,-9.644922,], 
+borderWidth: 3, 
+},
+{
+label: "68-FIC-0301/PID_S.PV_IN", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [9.675819,11.20855,11.32043,11.4323,11.54418,11.65605,11.67921,11.64241,11.68381,11.72521,11.76661,11.04589,10.64536,10.73755,10.82974,10.92193,11.02586,10.84508,10.98414,11.12319,11.26225,11.47627,11.41799,11.42035,11.42909,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script><div class="row">
+<div id = "44FR01_44-TT-9105B" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">FURNACE</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>17/03/2022 7:45:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_1" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>17/03/2022 7:44:57 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_2" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "44FR01_44-TT-9105B_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "44FR01_44-TT-9193B" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">FURNACE</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>17/03/2022 7:45:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_1" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>17/03/2022 7:44:57 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_2" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "44FR01_44-TT-9193B_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+<div id = "44FR02_44-BA-9201A" class="col-4">
+<div class="row">
+<div class="col-4">
+<div class="p-3 mb-2 bg-warning text-dark"><div class="col-xs-1 text-center"><p style="font-size:18px">FURNACE</p></div></div>
+</div>
+<div style="display: inline-block" class="col-8">
+<table class="table table-sm table-condensed">
+<thead style="font-size: 10px;">
+<tr>
+<th scope="col">UFO Timestamp</th>
+<th scope="col">UFO State</th>
+<th scope="col">DevStatus Timestamp</th>
+<th scope="col">Device Status</th>
+</tr>
+</thead>
+<tbody style="font-size: 10px;">
+<tr>
+<td>17/03/2022 7:45:12 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_1" style="background-color:Blue">Backup</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Blue" > 0 | Good</span></p></td>
+</tr>
+<tr>
+<td>17/03/2022 7:44:57 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="MGTPPI01-OPCInt_1_HEAT_UFO2_State_2" style="background-color:Magenta">Primary</span></p></td>
+<td>23/03/2022 8:46:16 AM</td>
+<td><p style="color:white"><span onclick=ShowTag(event) id="sy.st.PI6401B.OPCInt8.Device Status" style="background-color:Magenta" > 0 | Good</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<canvas id = "44FR02_44-BA-9201A_myChart" width ="100" height ="100" style="background-color: rgb(240, 230, 230)"></canvas>
+</div>
+</div>
+<script>
+var ctx = document.getElementById('44FR01_44-TT-9105B_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "44FR01_44-TT-9105B", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [792.244,792.394,792.6729,792.9517,793.0556,793.3449,793.4974,793.7243,793.9812,794.3119,794.6165,794.6639,794.5731,794.5023,794.5023,794.2358,794.213,794.213,794.0117,793.8192,793.6619,793.5046,793.3474,793.4946,793.6343,], 
+borderWidth: 3, 
+},
+{
+label: "44FR01_44-TT-9110B", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [38.53996,38.54624,38.55251,38.55879,38.56507,38.57135,38.57763,38.5839,38.59018,38.59645,38.60273,38.60901,38.61529,38.62157,38.62784,38.63412,38.6404,38.63945,38.59195,38.54444,38.49693,38.44942,38.40192,38.36806,38.36806,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script>
+<script>
+var ctx = document.getElementById('44FR01_44-TT-9193B_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "44FR01_44-TT-9193B", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [170.4283,170.4283,170.4283,169.8266,169.7328,169.6389,169.5356,169.3831,169.2708,168.9029,168.6566,168.4637,168.2708,168.1134,167.8171,167.7407,167.6643,167.5879,167.5816,167.7358,167.89,168.0441,168.1134,168.2423,168.4028,], 
+borderWidth: 3, 
+},
+{
+label: "44FR01_44-TT-9193A", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [332.5881,332.6398,331.6336,330.4528,330.2307,329.1877,328.8798,328.4143,329.7123,328.6448,326.5007,327.145,327.641,325.9357,326.1272,326.5141,327.5666,326.0351,326.4357,326.3889,326.9331,327.4739,326.9676,327.2876,327.257,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
+</script>
+<script>
+var ctx = document.getElementById('44FR02_44-BA-9201A_myChart').getContext('2d');
+var chart = new Chart(ctx, {
+type: 'line', 
+data: {
+labels: ["23/03/2022 11:45:36 AM","23/03/2022 11:50:36 AM","23/03/2022 11:55:36 AM","23/03/2022 12:00:36 PM","23/03/2022 12:05:36 PM","23/03/2022 12:10:36 PM","23/03/2022 12:15:36 PM","23/03/2022 12:20:36 PM","23/03/2022 12:25:36 PM","23/03/2022 12:30:36 PM","23/03/2022 12:35:36 PM","23/03/2022 12:40:36 PM","23/03/2022 12:45:36 PM","23/03/2022 12:50:36 PM","23/03/2022 12:55:36 PM","23/03/2022 1:00:36 PM","23/03/2022 1:05:36 PM","23/03/2022 1:10:36 PM","23/03/2022 1:15:36 PM","23/03/2022 1:20:36 PM","23/03/2022 1:25:36 PM","23/03/2022 1:30:36 PM","23/03/2022 1:35:36 PM","23/03/2022 1:40:36 PM","23/03/2022 1:45:36 PM",],
+datasets: [{
+label: "44FR02_44-BA-9201A", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(34, 177, 76)', 
+data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,], 
+borderWidth: 3, 
+},
+{
+label: "44FR02_44-BA-9201B", 
+backgroundColor: 'rgb(0, 0, 0,0)', 
+borderColor: 'rgb(0, 128, 255)', 
+data: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,], 
+borderWidth: 3, 
+}]
+},
+options: { }
+}); 
 </script>
 </body> 
 </html>
